@@ -4,7 +4,7 @@
   <title><![CDATA[Divisa C]]></title>
   <link href="http://misshula.github.com/atom.xml" rel="self"/>
   <link href="http://misshula.github.com/"/>
-  <updated>2012-11-22T09:03:11-05:00</updated>
+  <updated>2012-11-22T11:58:14-05:00</updated>
   <id>http://misshula.github.com/</id>
   <author>
     <name><![CDATA[David Misshula]]></name>
@@ -28,7 +28,7 @@
 
 
 <ul>
-<li><strong>Node &amp; Joyent:</strong> Joyent has hired the key guys that developed Node including Ryan Lienhart Dahl (the creator a Node) and Isaac Schlueter (creator of the Node package manager and current project lead of Bode) to give Node a sponsored house for it to grow. Joyent seems like the perfect place to host your node.js application.</li>
+<li><strong>Node &amp; Joyent:</strong> Joyent has hired the key guys that developed Node including Ryan Lienhart Dahl (the creator a Node) and Isaac Schlueter (creator of the Node package manager and current project lead of Node) to give Node a sponsored house for it to grow. Joyent seems like the perfect place to host your node.js application.</li>
 <li><strong>Performance:</strong> A recent <a href="http://mattconnolly.wordpress.com/2012/11/18/comparing-amazon-ec2-to-joyent-smartos/">post</a> by Matt Connolly shows the speed that Joyent provides. Talking with the guys from Joyent, they put a higher priority on performance and stability by using a “revamped infrastructure management platform”.</li>
 <li><strong>Customer Support:</strong> Within the first two days of provisioning my Joyent machine, I was greeted by a real person. Jeffery Bliss from Joyent was extremely knowledgable and an amazing help to provide me with some awesome details. He also included options outside of Joyent to help weigh my decision. And it was free.</li>
 <li><strong>Auto Scaling:</strong> If all goes well, you will have to scale your application by increasing your physical machine&#8217;s CPU speeds and RAM. With Joyent, you can do this on-the-fly without having to shutdown, provision or set up a new machine.</li>
