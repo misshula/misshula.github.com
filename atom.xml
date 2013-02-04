@@ -4,7 +4,7 @@
   <title><![CDATA[Divisa C]]></title>
   <link href="http://misshula.github.com/atom.xml" rel="self"/>
   <link href="http://misshula.github.com/"/>
-  <updated>2013-02-04T10:20:26-05:00</updated>
+  <updated>2013-02-04T11:22:05-05:00</updated>
   <id>http://misshula.github.com/</id>
   <author>
     <name><![CDATA[David Misshula]]></name>
@@ -18,7 +18,7 @@
     <link href="http://misshula.github.com/blog/2013/02/04/configure-haproxy-to-scale-multiple-nodes-with-stickiness-and-ssl/"/>
     <updated>2013-02-04T12:18:00-05:00</updated>
     <id>http://misshula.github.com/blog/2013/02/04/configure-haproxy-to-scale-multiple-nodes-with-stickiness-and-ssl</id>
-    <content type="html"><![CDATA[<p>I like to build things. I figured this out when I was young - when I was asked to build a Roman aqueduct out of cardboard and toilet paper rolls for a school project. Not only did I succeed in my first engineering project, but I remember tweaking it all week to ensure it never leaked and looked great too.</p>
+    <content type="html"><![CDATA[<p>I like to build things. I figured this out when I was young and asked to build a Roman aqueduct out of cardboard and toilet paper rolls for a school project. Not only did I succeed in my first engineering project, but I remember tweaking it all week to ensure it never leaked and looked great too.</p>
 
 <p>My most recent aqueduct wasn’t such - but rather - a multi-node socket.io node.js application at <a href="http://understoodit.com">Understoodit</a>.</p>
 
@@ -26,7 +26,7 @@
 <strong>
 <li> configure HAProxy with socket.io node.js servers</li>
 <li> add SSL to HAProxy</li>
-<li> scale multiple socket.io nodes</li>
+<li> scale socket.io with multiple nodes</li>
 </strong></p>
 
 <p>It’s easy to build an application that runs - but can you make it scale? It’s not good enough to beef up your application server - it needs to scale horizontally. So, here’s how I went about my business.</p>
@@ -35,11 +35,11 @@
 
 <p><img src="http://misshula.github.com/images/1.png"></p>
 
-<p>This should be pretty straight forward. If you&#8217;re on Amazon or any other cloud offering - the only tricky part should be opening up the right port to the public. Once you&#8217;ve established this - you can move on.</p>
+<p>This should be pretty straight forward. If you&#8217;re on Amazon, or any other cloud offering, you can move on. The only tricky part should be opening up the right port to the public.</p>
 
 <p><strong>2. Add a load balancer</strong></p>
 
-<p>A load balancer is a way to distribute workload across multiple computers. We have used <a href="http://haproxy.1wt.eu/">HAProxy</a> - which is an open source, fast, proxy server. It’s free, it’s flexible, it&#8217;s a topic of discussion online, and (most importantly) it just works! See <a href="http://haproxy.1wt.eu/download/1.4/doc/configuration.txt">documentation</a>.</p>
+<p>A load balancer is a way to distribute workload across multiple servers. We use <a href="http://haproxy.1wt.eu/">HAProxy</a>, an open source, fast proxy server. It’s free, it’s flexible, it&#8217;s a topic of discussion online, and (most importantly) it just works! See <a href="http://haproxy.1wt.eu/download/1.4/doc/configuration.txt">documentation</a>.</p>
 
 <p><img src="http://misshula.github.com/images/2.png"></p>
 
@@ -102,7 +102,7 @@
 <ul>
 <li>Uncomment the <code>debug</code> statement on line 4 to help you get going.</li>
 <li>Notice the front end called “unsecured” (line 13) is binding to port 80 (the standard open web server port). Ensure you can access your server on this port.</li>
-<li>Notice when the connection to the LB is made, it will connect to our default backend (line 20) called “www_backend”. This is actually our node.js app server running on port 8001 (seen on line 25) of our local machine.</li>
+<li>Notice when the connection to the LB is made, it will connect to our default backend (line 20) called “www_backend”. Our default backend is our node.js server running on port 8001 (seen on line 25) of our local machine.</li>
 </ul>
 
 
@@ -180,7 +180,7 @@ it is A LOT easier. Before, I was using <a href="http://devblog.bu.mp/introducin
 <ul>
 <li>I have two frontends binding to two ports 80 and 443 - unsecure (line 13) and secure (line 17 &amp; 22) respectively.</li>
 <li>When a client connects on the 80 port, they are redirected to the secure 443 port.</li>
-<li>You will also notice the <code>bind 0.0.0.0:443 ssl crt /etc/haproxy/yourcert.pem</code> statement (line 22) which connects the client to HAProxy using SSL. HAProxy will then process SSL and connect to the server. This is the new feature of HAProxy (If you want more details on creating your .pem file - contact me directly - it can be a pain!)</li>
+<li>The statement <code>bind 0.0.0.0:443 ssl crt /etc/haproxy/yourcert.pem</code> (line 22) connects the client to HAProxy using SSL. HAProxy will then process SSL and connect to the server. SSL is a new feature of HAProxy, if you want more details on creating your .pem file - contact me directly - it can be a pain!</li>
 <li>Try this out - if you see a green lock like this <img src="http://misshula.github.com/images/greenlock.png"> in chrome - success!</li>
 </ul>
 
@@ -189,7 +189,7 @@ it is A LOT easier. Before, I was using <a href="http://devblog.bu.mp/introducin
 
 <p><img src="http://misshula.github.com/images/4.png"></p>
 
-<p>The important thing with multiple socket.io servers is that we need our application to maintain our user&#8217;s state. When scaling socket.io we NEED to ensure our user connects to the same node each time they access the application. HAProxy does this by maintaining our user’s stickiness and manipulating our user&#8217;s cookie.</p>
+<p>The important thing with multiple socket.io servers is that we need socket.io to maintain our user&#8217;s state. We are using socket.io&#8217;s xhr-polling transport mechanism. When using xhr-polling, a socket.io process will consider a client disconnected if it doesn&#8217;t hear back. So, if we have two socket.io processes, it is important that all xhr-polling for one client is always directed to the same socket.io process. HAProxy helps ensure this by maintaining our user’s stickiness and manipulating our user&#8217;s cookie.</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -263,7 +263,7 @@ it is A LOT easier. Before, I was using <a href="http://devblog.bu.mp/introducin
 
 <ul>
 <li>We first have to add <code>balance roundrobin</code>. <a href="http://wiki.joyent.com/wiki/display/jpc2/Load+Balancing+with+HAproxy#LoadBalancingwithHAproxy-RoundRobin">Round Robin</a> rotates requests among backend servers and also accepts a weight parameter which specifies their relative weight.</li>
-<li>Next we must add the <code>cookie SERVERID insert indirect nocache</code> statement. This tells HAProxy to add a new parameter called SERVERID to our user’s cookie. This line is integral for our user’s stickiness and ensures our user is connected to the same socket.io server - which inturn maintains our user&#8217;s state.</li>
+<li>Next we must add the <code>cookie SERVERID insert indirect nocache</code> statement. This tells HAProxy to add a new parameter called SERVERID to our user’s cookie. This line is integral for ensuring that our user &#8220;sticks&#8221; to the same socket.io process - which inturn maintains our user&#8217;s state.</li>
 <li>Our <a href="http://blog.killtheradio.net/technology/haproxys-keep-alive-functionality-and-how-it-can-speed-up-your-site/">keep-alive</a> functionality (line 18) gives us a speed boost by maintianing our clients connection open to the web server.</li>
 <li>The only other thing we need to add is our second server and give both of our servers a cookie name. As seen in line 32 &amp; 33 of the .cfg.</li>
 </ul>
@@ -271,11 +271,11 @@ it is A LOT easier. Before, I was using <a href="http://devblog.bu.mp/introducin
 
 <p><strong>5. Test it!</strong></p>
 
-<p>Now, how do we know when our load balancer is actually working? Using Google Chrome’s developer tools - in the network tab, click on our latest GET request. From there, click on “Headers”. In the headers you will see your cookie. Within the cookie you should see a cookie parameter called SERVERID= (look familiar?)</p>
+<p>Now, how do we know when our load balancer is actually working? Using Google Chrome’s developer tools, in the network tab, click on our latest GET request. From there, click on “Headers”. In the headers you will see your cookie. Within the cookie you should see a cookie parameter called SERVERID= (look familiar?)</p>
 
 <p><img src="http://misshula.github.com/images/cookie.png"></p>
 
-<p>This is HAProxy relaying to you the server to connect to next time you connect to the site. Want to test the roundrobin-ing? Change the weight of your servers and try and see what you get for SERVERID.</p>
+<p>This is HAProxy marking which which socket.io process it should route your requests to. Want to test the roundrobin-ing? Change the weight of your servers, clear your cache, and try and see what you get for SERVERID.</p>
 
 <p>Once you have demonstrated you can scale two app severs, scaling out horizontally is a snap. Keep running more nodes - and keep letting HAProxy know where they live!</p>
 
