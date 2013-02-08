@@ -7,3 +7,11 @@
 .contact-info dt {
 	width: 100px;
 }
+
+#davidpic img {
+	width: 207px;
+	height: 156px;
+	border-radius: 8px;
+	margin-bottom: -20px;
+	margin-left: 3px;
+}
