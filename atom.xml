@@ -4,7 +4,7 @@
   <title><![CDATA[Divisa C]]></title>
   <link href="http://misshula.github.com/atom.xml" rel="self"/>
   <link href="http://misshula.github.com/"/>
-  <updated>2013-02-12T12:59:54-05:00</updated>
+  <updated>2013-03-05T15:38:15-05:00</updated>
   <id>http://misshula.github.com/</id>
   <author>
     <name><![CDATA[David Misshula]]></name>
@@ -12,6 +12,45 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Node.js meetup]]></title>
+    <link href="http://misshula.github.com/blog/2013/03/05/nodejs-meetup/"/>
+    <updated>2013-03-05T15:16:00-05:00</updated>
+    <id>http://misshula.github.com/blog/2013/03/05/nodejs-meetup</id>
+    <content type="html"><![CDATA[<p>Last week I had the pleasure of presenting at Toronto&#8217;s NodeJS meetup on cloud services for hosting your node.js application.</p>
+
+<p>I based this talk based on the experience that I have had at Understoodit and our trial of Joyent but eventual switch to Amazon EC2.</p>
+
+<p>The discussion that we had was great! Thank you for all that came out.</p>
+
+<p>I wanted to post the slides that I used - for anyone&#8217;s interest. As well, here are some of the useful links.</p>
+
+<p>I also came across this new node.js hosting platform <a href="https://modulus.io/">Modulus</a>. I&#8217;m interested to know if anyone has used it yet?</p>
+
+<p><strong>Links in Presentation</strong></p>
+
+<p><a href="http://joyent.com/products/joyent-cloud/pricing-comparison">http://joyent.com/products/joyent-cloud/pricing-comparison</a></p>
+
+<p><a href="http://joyent.com/products/joyent-cloud/aws-comparison">http://joyent.com/products/joyent-cloud/aws-comparison</a></p>
+
+<p><a href="http://aws.amazon.com/free/">http://aws.amazon.com/free/</a></p>
+
+<p><a href="http://jasonormand.com/2013/02/08/linode-vs-digitalocean-performance-benchmarks/">http://jasonormand.com/2013/02/08/linode-vs-digitalocean-performance-benchmarks/ </a></p>
+
+<p><a href="http://mattconnolly.wordpress.com/2012/11/18/comparing-amazon-ec2-to-joyent-smar tos/ ">http://mattconnolly.wordpress.com/2012/11/18/comparing-amazon-ec2-to-joyent-smar tos/ </a></p>
+
+<p><a href="http://news.ycombinator.com/item?id=4802957">http://news.ycombinator.com/item?id=4802957</a></p>
+
+<p><a href="http://joyent.com/content/05-developers/01-resources/43-a-framework-for-selecting-the-right-cloud-infrastructure-provider/121204-aws-whitepaper.pdf">http://joyent.com/content/05-developers/01-resources/43-a-framework-for-selecting-the-right-cloud-infrastructure-provider/121204-aws-whitepaper.pdf</a></p>
+
+<p><a href="http://misshula.github.com/images/nodejs.pdf"><strong>Presentation</strong></a></p>
+
+<iframe src="http://docs.google.com/gview?url=http://blog.davidmisshula.com/images/nodejs.pdf&embedded=true" 
+style="width:600px; height:500px;" frameborder="0"></iframe>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Three Months In - Am I An Entrepreneur Yet?]]></title>
@@ -26,7 +65,7 @@
 
 
 <p>Despite what other people want to tell you - you have work to do. You actually DO stuff. You often work a lot. I’d entertain the fact that my hours are more flexible, but just because I’m doing yoga on a Tuesday morning - doesn’t mean I’m not up until 2am on a Thursday - working.
-I originally thought that I’d be working every hour of everyday, to ensure success for my company. But, that’s truly not the case. When things need to get done, I ensure that they do - but, taking a break and letting your brain relax is often the best thing for my productivity. It is extremely important that you don’t pretend to work when you are not. It is okay to not be working all the time - infact, I encourage it. Turns out, when you step away from work you often unconciously solve problems you have been wrestling with.</p>
+I originally thought that I’d be working every hour of everyday, to ensure success for my company. But, that’s truly not the case. When things need to get done, I ensure that they do - but, taking a break and letting your brain relax is often the best thing for my productivity. It is extremely important that you don’t pretend to work when you are not. It is okay to not be working all the time - in fact, I encourage it. Turns out, when you step away from work you often unconsciously solve problems you have been wrestling with.</p>
 
 <h3>You have a boss</h3>
 
