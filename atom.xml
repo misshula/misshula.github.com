@@ -4,7 +4,7 @@
   <title><![CDATA[Divisa C]]></title>
   <link href="http://misshula.github.com/atom.xml" rel="self"/>
   <link href="http://misshula.github.com/"/>
-  <updated>2013-03-05T15:45:16-05:00</updated>
+  <updated>2013-05-02T09:38:27-04:00</updated>
   <id>http://misshula.github.com/</id>
   <author>
     <name><![CDATA[David Misshula]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Understoodit acquired by EventMobi]]></title>
+    <link href="http://misshula.github.com/blog/2013/05/02/understoodit-acquired-by-eventmobi/"/>
+    <updated>2013-05-02T09:22:00-04:00</updated>
+    <id>http://misshula.github.com/blog/2013/05/02/understoodit-acquired-by-eventmobi</id>
+    <content type="html"><![CDATA[<p>I have been quiet the last few weeks because I have some big news to share.</p>
+
+<p>Our company, Understoodit, is being acquired by another Toronto company - <a href="www.eventmobi.com">EventMobi</a>!</p>
+
+<p>This is yet another exciting turning point for the team and something we are are super excited about!</p>
+
+<p>Read about it here : <a href="http://www.eventmobi.com/blog/welcoming-understoodit-to-the-eventmobi-family/">http://www.eventmobi.com/blog/welcoming-understoodit-to-the-eventmobi-family/</a></p>
+
+<p><img src="http://misshula.github.com/images/em-logo.png"/></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Node.js meetup]]></title>
