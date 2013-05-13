@@ -4,7 +4,7 @@
   <title><![CDATA[Divisa C]]></title>
   <link href="http://misshula.github.com/atom.xml" rel="self"/>
   <link href="http://misshula.github.com/"/>
-  <updated>2013-05-02T09:51:18-04:00</updated>
+  <updated>2013-05-13T12:18:33-04:00</updated>
   <id>http://misshula.github.com/</id>
   <author>
     <name><![CDATA[David Misshula]]></name>
@@ -12,6 +12,50 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Why you should mentor at Ladies Learning Code]]></title>
+    <link href="http://misshula.github.com/blog/2013/05/13/why-you-should-mentor-at-ladies-learning-code/"/>
+    <updated>2013-05-13T11:50:00-04:00</updated>
+    <id>http://misshula.github.com/blog/2013/05/13/why-you-should-mentor-at-ladies-learning-code</id>
+    <content type="html"><![CDATA[<p>Last weekend I mentored at <a href="www.ladieslearningcode.com">Ladies Learning Code</a> - an awesome collaborative environment where, you guessed it, ladies learn to code.</p>
+
+<p>There’s a few reasons why LLC is amazing. Not only for learners, but mentors alike.</p>
+
+<h3>You only learn by teaching</h3>
+
+
+<p>I forget the feeling of learning to code for the first time. I also forget the importance of having someone explain things <em>well</em> when learning something new.
+Teaching makes you simplify problems and tests your most primitive knowledge. You have only learned something when you can effectively teach it to someone else. Try it.</p>
+
+<h3>Collaboration is key</h3>
+
+
+<p>Learning in an environment where team collaboration is encourage is incredible. A great learning experience is when students are teaching other students (see last point). Like most things in life, it’s much easier to work as a team to solve problems. It’s incredible what can come out of a group of individuals who are eager to learn and have a smile on their face.</p>
+
+<h3>You meet awesome people</h3>
+
+
+<p>You never know who you are going to meet. LLC brings out some amazing individuals - all with the right moral compass. I met my last business partner at LLC. We sold our business together.
+Everyone is doing cool things whether it be working on startups, school or jobs in a totally different sector. Take some time to listen and you will hopefully build some long lasting relationships.</p>
+
+<h3>Ladies are smarter than guys</h3>
+
+
+<p>There - I said it, and for one reason - women don’t have egos when learning technical stuff. They don’t think their questions are “stupid” because in reality - they are not. They question the right things and they don’t believe in “computer magic”. When they get things right, they don’t stop there - they want to understand <em>why</em> they were right.
+The technology field has largely been driven by men. However, women think differently than men and the shift of women in technology is beneficial to everyone.</p>
+
+<h3>Helping feels good</h3>
+
+
+<p>People help people. I have been helped. You have been helped. So, it’s time to give back. It’s fun and it feels good. Talking to a constant LLC contributor, <a href="https://twitter.com/em_nemtin">Emma Nemtin</a> about mentoring she says “Volunteering helps you more often than not and it inspires you to keep learning.&#8221; I couldn’t agree more.</p>
+
+<p>For more information Ladies Learning Code click <a href="www.ladieslearningcode.com">here</a> or follow them on <a href="https://twitter.com/llcodedotcom">twitter</a> with the hashtag <a href="https://twitter.com/search?q=%23ladieslearningcode&src=hash">#ladieslearningcode</a></p>
+
+<p><img src="http://misshula.github.com/images/llc.jpg">
+LLC in action.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Understoodit acquired by EventMobi]]></title>
