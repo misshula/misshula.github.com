@@ -5,149 +5,234 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Misshula</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
-            font-family: 'Georgia', serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background-color: #fafafa;
-            color: #333;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+            background-color: #0d1117;
+            color: #e6edf3;
             line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         
         .container {
-            background: white;
-            padding: 60px;
-            border-radius: 10px;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            max-width: 600px;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            border: 3px solid #30363d;
         }
         
         h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
-            color: #2c3e50;
-            text-align: center;
+            font-weight: 600;
         }
         
-        .subtitle {
-            text-align: center;
-            color: #7f8c8d;
-            font-size: 1.2em;
-            margin-bottom: 40px;
+        .username {
+            color: #7d8590;
+            font-size: 1.25em;
+            margin-bottom: 30px;
         }
         
         .bio {
-            margin-bottom: 40px;
-            text-align: center;
             font-size: 1.1em;
+            margin-bottom: 30px;
+            color: #8b949e;
         }
         
-        .contact {
-            border-top: 1px solid #eee;
-            padding-top: 30px;
-        }
-        
-        .contact h2 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-        }
-        
-        .contact-info {
+        .stats {
             display: flex;
-            flex-wrap: wrap;
+            justify-content: center;
             gap: 30px;
-            justify-content: space-between;
+            margin: 30px 0;
+            flex-wrap: wrap;
         }
         
-        .contact-item {
-            flex: 1;
-            min-width: 200px;
+        .stat {
+            text-align: center;
         }
         
-        .contact-item h3 {
-            color: #34495e;
-            margin-bottom: 10px;
-            font-size: 1.1em;
+        .stat-number {
+            display: block;
+            font-size: 1.5em;
+            font-weight: 600;
+            color: #e6edf3;
         }
         
-        .contact-item a {
-            color: #3498db;
+        .stat-label {
+            color: #7d8590;
+            font-size: 0.9em;
+        }
+        
+        .links {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .link {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 16px;
+            background-color: #21262d;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            color: #e6edf3;
             text-decoration: none;
+            font-size: 0.9em;
+            transition: all 0.2s;
         }
         
-        .contact-item a:hover {
-            text-decoration: underline;
+        .link:hover {
+            background-color: #30363d;
+            border-color: #8b949e;
         }
         
         .projects {
             margin-top: 40px;
-            border-top: 1px solid #eee;
-            padding-top: 30px;
+            text-align: left;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         .projects h2 {
-            color: #2c3e50;
             margin-bottom: 20px;
+            text-align: center;
         }
         
-        .project-link {
-            display: inline-block;
-            background: #3498db;
-            color: white;
-            padding: 10px 20px;
+        .project {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 16px;
+            margin-bottom: 12px;
+            transition: border-color 0.2s;
+        }
+        
+        .project:hover {
+            border-color: #8b949e;
+        }
+        
+        .project-name {
+            font-weight: 600;
+            color: #58a6ff;
             text-decoration: none;
-            border-radius: 5px;
-            margin-right: 15px;
-            margin-bottom: 10px;
+            display: block;
+            margin-bottom: 8px;
         }
         
-        .project-link:hover {
-            background: #2980b9;
+        .project-name:hover {
+            text-decoration: underline;
+        }
+        
+        .project-desc {
+            color: #8b949e;
+            font-size: 0.9em;
+        }
+        
+        .loading {
+            color: #7d8590;
         }
         
         @media (max-width: 600px) {
             .container {
-                padding: 30px;
+                padding: 20px;
             }
             
-            .contact-info {
-                flex-direction: column;
+            .stats {
+                gap: 20px;
+            }
+            
+            .links {
+                gap: 15px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>David Misshula</h1>
-        <p class="subtitle">Technology Entrepreneur & Developer</p>
+        <img id="avatar" class="avatar" src="" alt="GitHub Avatar" />
+        <h1 id="name">David Misshula</h1>
+        <div class="username">@<span id="username">misshula</span></div>
+        <div id="bio" class="bio">Loading profile...</div>
         
-        <div class="bio">
-            <p>Passionate about building technology solutions and helping teams scale. I enjoy creating tools that solve real problems and make people's lives easier.</p>
-        </div>
-        
-        <div class="contact">
-            <h2>Get In Touch</h2>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <h3>GitHub</h3>
-                    <a href="https://github.com/misshula" target="_blank">github.com/misshula</a>
-                </div>
-                <div class="contact-item">
-                    <h3>Email</h3>
-                    <a href="mailto:david@davidmisshula.com">david@davidmisshula.com</a>
-                </div>
-                <div class="contact-item">
-                    <h3>LinkedIn</h3>
-                    <a href="https://linkedin.com/in/davidmisshula" target="_blank">linkedin.com/in/davidmisshula</a>
-                </div>
+        <div class="stats">
+            <div class="stat">
+                <span id="repos" class="stat-number">--</span>
+                <span class="stat-label">Repositories</span>
+            </div>
+            <div class="stat">
+                <span id="followers" class="stat-number">--</span>
+                <span class="stat-label">Followers</span>
+            </div>
+            <div class="stat">
+                <span id="following" class="stat-number">--</span>
+                <span class="stat-label">Following</span>
             </div>
         </div>
         
+        <div class="links">
+            <a href="https://github.com/misshula" class="link">🐙 GitHub</a>
+            <a href="mailto:david@davidmisshula.com" class="link">📧 Email</a>
+        </div>
+        
         <div class="projects">
-            <h2>Projects</h2>
-            <a href="https://misshula.github.io/days-calculator-app/" class="project-link">USA Days Calculator</a>
-            <a href="https://github.com/misshula" class="project-link">View All Projects</a>
+            <h2>Featured Projects</h2>
+            <div id="featured-projects">
+                <div class="project">
+                    <a href="https://misshula.github.io/days-calculator-app/" class="project-name">USA Days Calculator</a>
+                    <div class="project-desc">Track USA days with rolling 365-day window and time simulation</div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <script>
+        // Fetch GitHub profile data
+        async function loadGitHubProfile() {
+            try {
+                const response = await fetch('https://api.github.com/users/misshula');
+                const data = await response.json();
+                
+                // Update profile info
+                document.getElementById('avatar').src = data.avatar_url;
+                document.getElementById('name').textContent = data.name || 'David Misshula';
+                document.getElementById('username').textContent = data.login;
+                document.getElementById('bio').textContent = data.bio || 'Technology enthusiast and developer';
+                
+                // Update stats
+                document.getElementById('repos').textContent = data.public_repos;
+                document.getElementById('followers').textContent = data.followers;
+                document.getElementById('following').textContent = data.following;
+                
+            } catch (error) {
+                console.error('Error loading GitHub profile:', error);
+                document.getElementById('bio').textContent = 'Technology enthusiast and developer';
+                document.getElementById('repos').textContent = '20+';
+                document.getElementById('followers').textContent = '10+';
+                document.getElementById('following').textContent = '50+';
+            }
+        }
+        
+        // Load profile when page loads
+        document.addEventListener('DOMContentLoaded', loadGitHubProfile);
+    </script>
 </body>
 </html>
