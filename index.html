@@ -1,956 +1,153 @@
-
 <!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Divisa C</title>
-  <meta name="author" content="David Misshula">
-
-  
-  <meta name="description" content="I wrote this note to a friend the other day. I didn&#8217;t think much of it until he claimed to have re-read it 20 times. It was something that came &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://misshula.github.com">
-  <link href="/favicon.ico" rel="icon">
-  
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="/javascripts/ender.js"></script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/atom.xml" rel="alternate" title="Divisa C" type="application/atom+xml">
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-36315265-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Misshula</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fafafa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            background: white;
+            padding: 60px;
+            border-radius: 10px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #2c3e50;
+            text-align: center;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+        
+        .bio {
+            margin-bottom: 40px;
+            text-align: center;
+            font-size: 1.1em;
+        }
+        
+        .contact {
+            border-top: 1px solid #eee;
+            padding-top: 30px;
+        }
+        
+        .contact h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-between;
+        }
+        
+        .contact-item {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .contact-item h3 {
+            color: #34495e;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .contact-item a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+        
+        .projects {
+            margin-top: 40px;
+            border-top: 1px solid #eee;
+            padding-top: 30px;
+        }
+        
+        .projects h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        
+        .project-link {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 15px;
+            margin-bottom: 10px;
+        }
+        
+        .project-link:hover {
+            background: #2980b9;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
-
-<body   class="no-sidebar"  >
-  <header role="banner"><hgroup>
-  <h1>Divisa C</h1>
-  
-    <h2><a href="/">DM</a></h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation">
-  
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:misshula.github.com" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-    <a href="https://twitter.com/davidmisshula" class="twitter-follow-button" data-show-count="false">Follow @davidmisshula</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-  </fieldset>
-  <div id="davidpic"><img src="/images/davidlinkedin.jpeg"></div>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-  <li><a href="/about">About</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/08/08/a-raw-description-of-challenging-the-status-quo/">A Raw Description of Challenging the Status Quo</a></h1>
-    
-    
-      <p class="meta">
+<body>
+    <div class="container">
+        <h1>David Misshula</h1>
+        <p class="subtitle">Technology Entrepreneur & Developer</p>
         
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-08-08T23:36:00-04:00" pubdate data-updated="true">Aug 8<span>th</span>, 2013</time>
+        <div class="bio">
+            <p>Passionate about building technology solutions and helping teams scale. I enjoy creating tools that solve real problems and make people's lives easier.</p>
+        </div>
         
-         | <a href="/blog/2013/08/08/a-raw-description-of-challenging-the-status-quo/#disqus_thread">Comments</a>
+        <div class="contact">
+            <h2>Get In Touch</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/misshula" target="_blank">github.com/misshula</a>
+                </div>
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <a href="mailto:david@davidmisshula.com">david@davidmisshula.com</a>
+                </div>
+                <div class="contact-item">
+                    <h3>LinkedIn</h3>
+                    <a href="https://linkedin.com/in/davidmisshula" target="_blank">linkedin.com/in/davidmisshula</a>
+                </div>
+            </div>
+        </div>
         
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I wrote this note to a friend the other day. I didn&#8217;t think much of it until he claimed to have re-read it 20 times. It was something that came out of me so easily and with such conviction, I knew it was meaningful. My friend just quit his job to pursue his dreams. I have such respect for that that I wanted to share a few things with him that I&#8217;ve been learning along the way.</p>
-
-<blockquote><p>&#8220;hey man. good on ya. it takes guts to quit something that may be comfortable, but it starts from believing in yourself. i took comfort in knowing i had surrounded myself with great people (family/friends), to help ensure i wouldn&#8217;t become a screwup. you can say the same. it&#8217;s an emotional adventure that one really can&#8217;t find anywhere else. you take a leap of faith and sometimes you feel like you should pray (religion aside). days are good and bad, but it&#8217;s important not to judge based on small increments of time. self reflect on months, not weeks - and always, believe in yourself. keep your integrity and remember what it is that makes you feel satisfied. my values have changed and my eagerness for success has multiplied. &#8220;treat people like you want to be treated&#8221; has never meant so much to me. going for it has defined who i want to be - and i&#8217;m happy to have had the opportunity. <br/>a bit of a ramble - but i wish you the best. i&#8217;ll be rooting for you. happy to chat anytime. let&#8217;s catch up soon.&#8221;</p></blockquote>
-
-
-<p>Nothing gets me more excited than seeing great people betting on themselves. Do good and believe in yourself.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/05/13/why-you-should-mentor-at-ladies-learning-code/">Why You Should Mentor at Ladies Learning Code</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-05-13T11:50:00-04:00" pubdate data-updated="true">May 13<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/05/13/why-you-should-mentor-at-ladies-learning-code/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Last weekend I mentored at <a href="http://www.ladieslearningcode.com">Ladies Learning Code</a> - an awesome collaborative environment where, you guessed it, ladies learn to code.</p>
-
-<p>There’s a few reasons why LLC is amazing. Not only for learners, but mentors alike.</p>
-
-<h3>You only learn by teaching</h3>
-
-
-<p>I forget the feeling of learning to code for the first time. I also forget the importance of having someone explain things <em>well</em> when learning something new.
-Teaching makes you simplify problems and tests your most primitive knowledge. You have only learned something when you can effectively teach it to someone else. Try it.</p>
-
-<h3>Collaboration is key</h3>
-
-
-<p>Learning in an environment where team collaboration is encourage is incredible. A great learning experience is when students are teaching other students (see last point). Like most things in life, it’s much easier to work as a team to solve problems. It’s incredible what can come out of a group of individuals who are eager to learn and have a smile on their face.</p>
-
-<h3>You meet awesome people</h3>
-
-
-<p>You never know who you are going to meet. LLC brings out some amazing individuals - all with the right moral compass. I met my last business partner at LLC. We sold our business together.
-Everyone is doing cool things whether it be working on startups, school or jobs in a totally different sector. Take some time to listen and you will hopefully build some long lasting relationships.</p>
-
-<h3>Ladies are smarter than guys</h3>
-
-
-<p>There - I said it, and for one reason - women don’t have egos when learning technical stuff. They don’t think their questions are “stupid” because in reality - they are not. They question the right things and they don’t believe in “computer magic”. When they get things right, they don’t stop there - they want to understand <em>why</em> they were right.
-The technology field has largely been driven by men. However, women think differently than men and the shift of women in technology is beneficial to everyone.</p>
-
-<h3>Helping feels good</h3>
-
-
-<p>People help people. I have been helped. You have been helped. So, it’s time to give back. It’s fun and it feels good. Talking to a constant LLC contributor, <a href="https://twitter.com/em_nemtin">Emma Nemtin</a> about mentoring she says “Volunteering helps you more often than not and it inspires you to keep learning.&#8221; I couldn’t agree more.</p>
-
-<p>For more information Ladies Learning Code click <a href="http://www.ladieslearningcode.com">here</a> or follow them on <a href="https://twitter.com/llcodedotcom">twitter</a> with the hashtag <a href="https://twitter.com/search?q=%23ladieslearningcode&src=hash">#ladieslearningcode</a></p>
-
-<p><img src="/images/llc.jpg">
-LLC in action.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/05/02/understoodit-acquired-by-eventmobi/">Understoodit Acquired by EventMobi</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-05-02T09:22:00-04:00" pubdate data-updated="true">May 2<span>nd</span>, 2013</time>
-        
-         | <a href="/blog/2013/05/02/understoodit-acquired-by-eventmobi/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I have been quiet the last few weeks because I have some big news to share.</p>
-
-<p>Our company, Understoodit, is being acquired by another Toronto company - <a href="www.eventmobi.com">EventMobi</a>!</p>
-
-<p>This is yet another exciting turning point for the team and something we are very excited about!</p>
-
-<p>Read about it here : <a href="http://www.eventmobi.com/blog/welcoming-understoodit-to-the-eventmobi-family/">http://www.eventmobi.com/blog/welcoming-understoodit-to-the-eventmobi-family/</a></p>
-
-<p><img src="/images/em-logo.png"/></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/03/05/nodejs-meetup/">Node.js Meetup</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-03-05T15:16:00-05:00" pubdate data-updated="true">Mar 5<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/03/05/nodejs-meetup/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Last week I had the pleasure of presenting at Toronto&#8217;s NodeJS meetup on cloud services for hosting your node.js application.</p>
-
-<p>I based this talk based on the experience that I have had at Understoodit and our trial of Joyent but eventual switch to Amazon EC2.</p>
-
-<p>The discussion that we had was great! Thank you for all that came out.</p>
-
-<p>I wanted to post the slides that I used for anyone&#8217;s interest. As well, here are some of the useful links.</p>
-
-<p>I also came across this new node.js hosting platform <a href="https://modulus.io/">Modulus</a>. I&#8217;m interested to know if anyone has used it yet?</p>
-
-<p><strong>Links in Presentation</strong></p>
-
-<p><a href="http://joyent.com/products/joyent-cloud/pricing-comparison">http://joyent.com/products/joyent-cloud/pricing-comparison</a></p>
-
-<p><a href="http://joyent.com/products/joyent-cloud/aws-comparison">http://joyent.com/products/joyent-cloud/aws-comparison</a></p>
-
-<p><a href="http://aws.amazon.com/free/">http://aws.amazon.com/free/</a></p>
-
-<p><a href="http://jasonormand.com/2013/02/08/linode-vs-digitalocean-performance-benchmarks/">http://jasonormand.com/2013/02/08/linode-vs-digitalocean-performance-benchmarks/ </a></p>
-
-<p><a href="http://mattconnolly.wordpress.com/2012/11/18/comparing-amazon-ec2-to-joyent-smartos/ ">http://mattconnolly.wordpress.com/2012/11/18/comparing-amazon-ec2-to-joyent-smartos/ </a></p>
-
-<p><a href="http://news.ycombinator.com/item?id=4802957">http://news.ycombinator.com/item?id=4802957</a></p>
-
-<p><a href="http://joyent.com/content/05-developers/01-resources/43-a-framework-for-selecting-the-right-cloud-infrastructure-provider/121204-aws-whitepaper.pdf">http://joyent.com/content/05-developers/01-resources/43-a-framework-for-selecting-the-right-cloud-infrastructure-provider/121204-aws-whitepaper.pdf</a></p>
-
-<p><a href="/images/nodejs.pdf"><strong>Presentation</strong></a></p>
-
-<iframe src="http://docs.google.com/gview?url=http://blog.davidmisshula.com/images/nodejs.pdf&embedded=true" 
-style="width:600px; height:500px;" frameborder="0"></iframe>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/02/12/am-i-an-entrepreneur-yet/">Three Months in - Am I an Entrepreneur Yet?</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-12T13:47:00-05:00" pubdate data-updated="true">Feb 12<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/02/12/am-i-an-entrepreneur-yet/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>When I was young, I remember asking my dad  - “what is an Entrepreneur?” Quickly, he responded - “it’s someone without a job, son.”</p>
-
-<p>Well, it’s been three months since ‘having a job’ and these are some of the things I’ve learned.</p>
-
-<h3>You have a job</h3>
-
-
-<p>Despite what other people want to tell you - you have work to do. You actually DO stuff. You often work a lot. I’d entertain the fact that my hours are more flexible, but just because I’m doing yoga on a Tuesday morning - doesn’t mean I’m not up until 2am on a Thursday - working.
-I originally thought that I’d be working every hour of everyday, to ensure success for my company. But, that’s truly not the case. When things need to get done, I ensure that they do - but, taking a break and letting your brain relax is often the best thing for my productivity. It is extremely important that you don’t pretend to work when you are not. It is okay to not be working all the time - in fact, I encourage it. Turns out, when you step away from work you often unconsciously solve problems you have been wrestling with.</p>
-
-<h3>You have a boss</h3>
-
-
-<p>It’s you - and that person should be the toughest critic you’ve worked for. It’s not good enough to be just satisfied with something you create. You must be proud of what you do, and you shouldn’t stop until you are. But often, you can’t always be your biggest motivator. Set up goals with your teammates and take time for some constructive criticism along the way. Do things with a purpose and the rest will fall into place.</p>
-
-<h3>You have to be creative</h3>
-
-
-<p>You finally get to ‘put your money where your mouth is.’ You have to sharpen your skills and show what you’ve got. Too many times, I said ‘cool’ or ‘motivating’ things in interviews, or with people - but could always fall back on the fact I had a job to tie me up. Now, I have a passion that needs to be relayed in my words and represented in my actions. You don’t get handed the silver platter (or paper plate) very often - so make a meal fit for a king.</p>
-
-<h3>You have to make real decisions</h3>
-
-
-<p>Every decision you make is critical. This should not scare you, but encourage you even further. Every decision you make sculpts who you are and what your business is. When you own your own business - each decision means much more. Sculpt with a chisel and not a brush.</p>
-
-<h3>You have to enjoy the ride</h3>
-
-
-<p>Sure, there is some stress and a few road bumps along the way - but, it’s important to enjoy the ups and the downs. Yes, enjoy the downs. You learn from the downs and it helps balance the ups. If each day you learn something new, and every day is based on how wise you are - then, every day should get better. It can be a financial burden to start your own shop, but I often tell myself, “some people save for traveling, some people save for school, I saved for starting a business.” And I’m okay with it. We may not be buying yachts, but we are progressing each day, as business owners and more importantly - as people. I’m learning how the world works without the superficial, financial safety blanket that my generation grows up with.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/02/04/configure-haproxy-to-scale-multiple-nodes-with-stickiness-and-ssl/">Configure HAProxy to Scale Socket.io Node.js Apps With SSL</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-04T12:18:00-05:00" pubdate data-updated="true">Feb 4<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/02/04/configure-haproxy-to-scale-multiple-nodes-with-stickiness-and-ssl/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I like to build things. I figured this out when I was young and asked to build a Roman aqueduct out of cardboard and toilet paper rolls for a school project. Not only did I succeed in my first engineering project, but I remember tweaking it all week to ensure it never leaked and looked great too.</p>
-
-<p>My most recent aqueduct wasn’t such - but rather - a multi-node socket.io node.js application at <a href="http://understoodit.com">Understoodit</a>.</p>
-
-<p>I learned how-to:
-<strong>
-<li> configure HAProxy with socket.io node.js servers</li>
-<li> add SSL to HAProxy</li>
-<li> scale socket.io with multiple nodes</li>
-</strong></p>
-
-<p>It’s easy to build an application that runs - but can you make it scale? It’s not good enough to beef up your application server - it needs to scale horizontally. So, here’s how I went about my business.</p>
-
-<p><strong>1. Start with one-to-one:</strong></p>
-
-<p><img src="/images/1.png"></p>
-
-<p>This should be pretty straight forward. If you&#8217;re on Amazon, or any other cloud offering, you can move on. The only tricky part should be opening up the right port to the public.</p>
-
-<p><strong>2. Add a load balancer</strong></p>
-
-<p>A load balancer is a way to distribute workload across multiple servers. We use <a href="http://haproxy.1wt.eu/">HAProxy</a>, an open source, fast proxy server. It’s free, it’s flexible, it&#8217;s a topic of discussion online, and (most importantly) it just works! See <a href="http://haproxy.1wt.eu/download/1.4/doc/configuration.txt">documentation</a>.</p>
-
-<p><img src="/images/2.png"></p>
-
-<p>Once you install HAProxy - you need to run your haproxy.cfg file. Here is an example haproxy.cfg I used to get it up and running:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>global
-</span><span class='line'>      maxconn     4096 
-</span><span class='line'>      nbproc      1
-</span><span class='line'>      #debug
-</span><span class='line'>      daemon
-</span><span class='line'>      log         127.0.0.1   local0
-</span><span class='line'>
-</span><span class='line'>  defaults
-</span><span class='line'>      mode        http
-</span><span class='line'>      option      httplog
-</span><span class='line'>      log         global
-</span><span class='line'>    
-</span><span class='line'>  frontend unsecured *:80
-</span><span class='line'>      timeout     client      86400000
-</span><span class='line'>      mode        http
-</span><span class='line'>      option      httpclose
-</span><span class='line'>      option      forwardfor  #forward’s clients IP to app
-</span><span class='line'>      default_backend         www_backend
-</span><span class='line'>
-</span><span class='line'>  backend www_backend
-</span><span class='line'>      mode        http
-</span><span class='line'>      option      forwardfor  #this sets X-Forwarded-For
-</span><span class='line'>      timeout     server      30000
-</span><span class='line'>      timeout     connect     4000
-</span><span class='line'>      server      server1     localhost:8001 weight 1 maxconn 1024 check</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Nothing crazy here. Some things to keep note of:</p>
-
-<ul>
-<li>Uncomment the <code>debug</code> statement on line 4 to help you get going.</li>
-<li>Notice the front end called “unsecured” (line 13) is binding to port 80 (the standard open web server port). Ensure you can access your server on this port.</li>
-<li>Notice when the connection to the LB is made, it will connect to our default backend (line 20) called “www_backend”. Our default backend is our node.js server running on port 8001 (seen on line 25) of our local machine.</li>
-</ul>
-
-
-<p><strong>3. Add an SSL certificate!</strong></p>
-
-<p><img src="/images/3.png"></p>
-
-<p>Should be easy right? Well, with the release of HAProxy Development 1.5-dev17
-it is A LOT easier. Before, I was using <a href="http://devblog.bu.mp/introducing-stud">Stud with HAProxy</a>. It worked, but it was another process I had to keep track of. Also, it would never forward my client’s IP. If your into masochism - give it a shot. Or, just use the new version of HAProxy.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>global
-</span><span class='line'>      maxconn     4096 
-</span><span class='line'>      nbproc      1
-</span><span class='line'>      #debug
-</span><span class='line'>      daemon
-</span><span class='line'>      log         127.0.0.1    local0
-</span><span class='line'>
-</span><span class='line'>  defaults
-</span><span class='line'>      mode        http
-</span><span class='line'>      option      httplog
-</span><span class='line'>      log         global
-</span><span class='line'>
-</span><span class='line'>  frontend unsecured *:80
-</span><span class='line'>      timeout     client 86400000
-</span><span class='line'>      redirect    prefix https://yoursite.com code 301 
-</span><span class='line'>
-</span><span class='line'>  frontend  secured
-</span><span class='line'>      timeout     client 86400000
-</span><span class='line'>      mode        http
-</span><span class='line'>      option      httpclose
-</span><span class='line'>      option      forwardfor
-</span><span class='line'>      bind        0.0.0.0:443 ssl crt /etc/haproxy/yourcert.pem
-</span><span class='line'>      default_backend      www_backend
-</span><span class='line'>
-</span><span class='line'>  backend www_backend
-</span><span class='line'>      mode        http
-</span><span class='line'>      option      forwardfor # This sets X-Forwarded-For
-</span><span class='line'>      timeout     server 30000
-</span><span class='line'>      timeout     connect 4000
-</span><span class='line'>      server      server1 localhost:8001 weight 1 maxconn 1024 check</span></code></pre></td></tr></table></div></figure>
-
-
-<p>A couple additional things here:</p>
-
-<ul>
-<li>I have two frontends binding to two ports 80 and 443 - unsecure (line 13) and secure (line 17 &amp; 22) respectively.</li>
-<li>When a client connects on the 80 port, they are redirected to the secure 443 port.</li>
-<li>The statement <code>bind 0.0.0.0:443 ssl crt /etc/haproxy/yourcert.pem</code> (line 22) connects the client to HAProxy using SSL. HAProxy will then process SSL and connect to the server. SSL is a new feature of HAProxy, if you want more details on creating your .pem file - contact me directly - it can be a pain!</li>
-<li>Try this out - if you see a green lock like this <img src="/images/greenlock.png"> in chrome - success!</li>
-</ul>
-
-
-<p><strong>4. Now, let’s get interesting - scale it!</strong></p>
-
-<p><img src="/images/4.png"></p>
-
-<p>The important thing with multiple socket.io servers is that we need socket.io to maintain our user&#8217;s state. We are using socket.io&#8217;s xhr-polling transport mechanism. When using xhr-polling, a socket.io process will consider a client disconnected if it doesn&#8217;t hear back. So, if we have two socket.io processes, it is important that all xhr-polling for one client is always directed to the same socket.io process. HAProxy helps ensure this by maintaining our user’s stickiness and manipulating our user&#8217;s cookie.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>global
-</span><span class='line'>      maxconn     4096 
-</span><span class='line'>      nbproc      1
-</span><span class='line'>      #debug
-</span><span class='line'>      daemon
-</span><span class='line'>      log         127.0.0.1    local0
-</span><span class='line'>
-</span><span class='line'>  defaults
-</span><span class='line'>      mode        http
-</span><span class='line'>      option      httplog
-</span><span class='line'>      log         global
-</span><span class='line'>
-</span><span class='line'>  frontend unsecured *:80
-</span><span class='line'>      timeout     client 86400000
-</span><span class='line'>      redirect    prefix https://yoursite.com code 301 
-</span><span class='line'>
-</span><span class='line'>  frontend  secured
-</span><span class='line'>      timeout     client 86400000
-</span><span class='line'>      mode        http
-</span><span class='line'>      option      httpclose
-</span><span class='line'>      option      forwardfor
-</span><span class='line'>      bind        0.0.0.0:443 ssl crt /etc/haproxy/yourcert.pem
-</span><span class='line'>      default_backend      www_backend
-</span><span class='line'>
-</span><span class='line'>  backend www_backend
-</span><span class='line'>      mode        http
-</span><span class='line'>      balance     roundrobin
-</span><span class='line'>      cookie      SERVERID insert indirect nocache
-</span><span class='line'>      option      forwardfor
-</span><span class='line'>      timeout     server 30000
-</span><span class='line'>      timeout     connect 4000
-</span><span class='line'>      server      server1 localhost:8001 cookie server1 weight 1 maxconn 1024 check
-</span><span class='line'>      server      server2 localhost:8002 cookie server2 weight 1 maxconn 1024 check</span></code></pre></td></tr></table></div></figure>
-
-
-<p>There are a couple differences to the HAProxy backend in the config file.</p>
-
-<ul>
-<li>We first have to add <code>balance roundrobin</code>. <a href="http://wiki.joyent.com/wiki/display/jpc2/Load+Balancing+with+HAproxy#LoadBalancingwithHAproxy-RoundRobin">Round Robin</a> rotates requests among backend servers and also accepts a weight parameter which specifies their relative weight.</li>
-<li>Next we must add the <code>cookie SERVERID insert indirect nocache</code> statement. This tells HAProxy to add a new parameter called SERVERID to our user’s cookie. This line is integral for ensuring that our user &#8220;sticks&#8221; to the same socket.io process - which inturn maintains our user&#8217;s state.</li>
-<li>Our <a href="http://blog.killtheradio.net/technology/haproxys-keep-alive-functionality-and-how-it-can-speed-up-your-site/">keep-alive</a> functionality (line 18) gives us a speed boost by maintianing our clients connection open to the web server.</li>
-<li>The only other thing we need to add is our second server and give both of our servers a cookie name. As seen in line 32 &amp; 33 of the .cfg.</li>
-</ul>
-
-
-<p><strong>5. Test it!</strong></p>
-
-<p>Now, how do we know when our load balancer is actually working? Using Google Chrome’s developer tools, in the network tab, click on our latest GET request. From there, click on “Headers”. In the headers you will see your cookie. Within the cookie you should see a cookie parameter called SERVERID= (look familiar?)</p>
-
-<p><img src="/images/cookie.png"></p>
-
-<p>This is HAProxy marking which which socket.io process it should route your requests to. Want to test the roundrobin-ing? Change the weight of your servers, clear your cache, and try and see what you get for SERVERID.</p>
-
-<p>Once you have demonstrated you can scale two app severs, scaling out horizontally is a snap. Keep running more nodes - and keep letting HAProxy know where they live!</p>
-
-<p>Funny enough, there are more similarities between Aqueducts and HAProxy than I originally thought!</p>
-
-<p>Some other HAProxy links:</p>
-
-<ul>
-<li><a href="http://wiki.joyent.com/wiki/display/jpc2/Load+Balancing+with+HAproxy">HAProxy on Joyent</a></li>
-<li><a href="http://blog.exceliance.fr/2012/09/10/how-to-get-ssl-with-haproxy-getting-rid-of-stunnel-stud-nginx-or-pound/">HAProxy and SSL from Exceliance</a></li>
-</ul>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/11/22/joyent-is-great-but-we-have-switched-to-amazon-ec2/">Joyent Is Great, but We&#8217;ve Switched to Amazon EC2</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-11-22T14:13:00-05:00" pubdate data-updated="true">Nov 22<span>nd</span>, 2012</time>
-        
-         | <a href="/blog/2012/11/22/joyent-is-great-but-we-have-switched-to-amazon-ec2/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>At <a href="http://understoodit.com">Understoodit</a>, we’ve been hosting our node.js application on the <a href="http://joyent.com">Joyent</a> cloud using two Small 1GB (1 vCPU) SmartOS machines for over four months. It’s snappy, reliable and costs us $124.10 a month.</p>
-
-<p>But, a few holes have forced us to hosting on Amazon EC2.</p>
-
-<p>I’ll explain why we chose Joyent in the first place (you should explore it too) and why we’ve switched to EC2.</p>
-
-<h3>Why choose Joyent:</h3>
-
-
-<ul>
-<li><strong>Node &amp; Joyent:</strong> Joyent has hired the key guys that developed Node including Ryan Lienhart Dahl (the creator a Node) and Isaac Schlueter (creator of the Node package manager and current project lead of Node) to give Node a sponsored house for it to grow. Joyent seems like the perfect place to host your node.js application.</li>
-<li><strong>Performance:</strong> A recent <a href="http://mattconnolly.wordpress.com/2012/11/18/comparing-amazon-ec2-to-joyent-smartos/">post</a> by Matt Connolly shows the speed that Joyent provides. Talking with the guys from Joyent, they put a higher priority on performance and stability by using a “revamped infrastructure management platform”.</li>
-<li><strong>Customer Support:</strong> Within the first two days of provisioning my Joyent machine, I was greeted by a real person. Jeffery Bliss from Joyent was extremely knowledgable and an amazing help to provide me with some awesome details. He also included options outside of Joyent to help weigh my decision. And it was free.</li>
-<li><strong>Auto Scaling:</strong> If all goes well, you will have to scale your application by increasing your physical machine&#8217;s CPU speeds and RAM. With Joyent, you can do this on-the-fly without having to shutdown, provision or set up a new machine.</li>
-<li><strong>Data Analytics:</strong> Joyent teamed up with <a href="http://nodefly.com">Nodefly</a> and <a href="http://newrelic.com">New Relic</a> (application monitoring systems) that provide you with real-time application data. When you sign up with Joyent, you get exclusive access to both - for free.</li>
-</ul>
-
-
-<p>These reasons back Joyent’s legitimacy in competing with, and in some cases, outdoing Amazon, but there were a host of reasons why we ended up deciding to switch to EC2.</p>
-
-<h3>Why we chose Amazon EC2:</h3>
-
-
-<ul>
-<li><strong>It’s Cheaper:</strong> We have a staging environment that mirrors our production environment. With EC2 we can run our staging environment only when we are actually using it. In contrast, with Joyent, our machines must always be running (and billing). EC2 runs on a SAN (<a href="http://en.wikipedia.org/wiki/Storage_area_network">Storage area network</a>) in which each machine is provisioned with a “virtual hard drive” and elastic IP address. In turn, you only pay for the time you have it up and costs as little as 2 cents an hour. Also, AWS provides you with some <a href="ttp://aws.amazon.com/free/">free</a> services to get you started. It is always nice to get a taste before you pay.</li>
-<li><strong>We use their other services:</strong> Not only do we use AWS for EC2 but we also use Cloudfront as our CDN and look to take advantage of a few other offerings AWS provides. We also run our databases on Heroku Postgres which is on the Amazon network.</li>
-<li><strong>Multiple Locations:</strong> AWS allows you to provision VMs in Asia, North America, South America, Austrailia and Europe. We offer a custom version and being able to provision a machine closer to our clients is a big win. Dealing with a recent customer in the UK - we provided them a solution where their data was local (and not overseas) that was a huge selling point.</li>
-<li><p><strong>SmartOS is not Ubuntu:</strong> Joyent gives you the option to run Ubuntu, but their “house” OS is SmartOS, which has a learning curve. With SmartOS, I came across a few annoying nuances.
-   <ul>
-   <li>When trying to set up Stud for our SSL connections, I needed pull a specific version forked for SmartOS (thanks <a href="https://github.com/stash">Stash</a>). I thought I was in the clear, but inevitably ran into some privileges issues that were solved by this Solaris specific command:
-  <br>
-  &nbsp;&nbsp;&nbsp;&nbsp;<code>pfexec crle -l /usr/local/lib -u</code></p>
-
-<p>  Not the end of the world - but it added some frustration to my installation.
-  </li>
-  <li>
-  I ran into another issue when trying to install the latest Haproxy with SSL (to get rid of Stud). The issue arises with the inability to install libssl-dev on SmartOS. I never found a workaround for this issue and it may have been the final deterrent for me.
-  </li>
-  <li>
-  Another issue I found was when trying to install syslog-ng to set up external logs through <a href="http://loggly.com">Loggly</a>.
-  </li></p>
-
-<p>  These issues made the experience of working with SmartOS more frustrating and added time to setting up the VMs. On second try, I’d likely just provision a Joyent machine with Ubuntu. Joyent does provide a SmartOS <a href="http://wiki.joyent.com/wiki/display/jpc2/The+Joyent+Linux-to-SmartOS+Cheat+Sheet">cheatsheet</a>.
-  <strong>Aside:</strong> An interesting <a href="http://www.infoworld.com/d/cloud-computing/review-joyent-cloud-built-speed-207561">article</a> by Peter Wayner points out the advantages of SmartOS as a enterprise server.
-  </ul></p></li>
-</ul>
-
-
-<p>Like any decision there are tradeoffs to both. For now, it makes sense for our business to use AWS EC2 as we are not at the stage to reap the benefits that Joyent provides. I do think that Joyent is pushing the boundaries of cloud computing by providing increasingly better performance, excellent customer support, and going up against a big player in AWS with a “we are out to get you” mentality. I will definitely be keeping a close eye on Joyent and explore their options again in the future.</p>
-
-<p>Here is some further reading comparing AWS EC2 vs Joyent:</p>
-
-<ul>
-<li><a href="http://www.joyent.com/products/joyent-cloud/aws-comparison">http://www.joyent.com/products/joyent-cloud/aws-comparison</a></li>
-<li><a href="http://searchcloudcomputing.techtarget.com/video/Joyent-CEO-pokes-holes-in-Amazons-cloud">http://searchcloudcomputing.techtarget.com/video/Joyent-CEO-pokes-holes-in-Amazons-cloud</a></li>
-<li><a href="http://cloud-computing.findthebest.com/compare/5-6/Amazon-EC2-vs-Joyent">http://cloud-computing.findthebest.com/compare/5-6/Amazon-EC2-vs-Joyent</a></li>
-</ul>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/11/16/quit-my-job-for-a-startup-what-ibm-had-wrong/">Quit My Job for a Startup - What IBM Had Wrong</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-11-16T09:22:00-05:00" pubdate data-updated="true">Nov 16<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/11/16/quit-my-job-for-a-startup-what-ibm-had-wrong/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>
-I&#8217;ve named my blog Divisa C. It&#8217;s Latin for &#8220;divided 100,000&#8221;.
-</p>
-
-
-
-
-<p>
-As of last week, I worked for IBM - which employs over 300,000 people. I quit to start <a href="http://understoodit.com" target="_blank">Understoodit</a> with just three.
-</p>
-
-
-
-
-<p>
-Working for a large company has many pros and cons. I&#8217;ll start with the pros, so I can end with the cons freshly in my mind to strengthen the decision I have already made. These are some of the things I learned at IBM:
-</p>
-
-
-
-
-<h3>Pros:</h3>
-
-
-<p>
-<strong>There are a lot of people:</strong> A lot of people mean a lot of resources. If you don&#8217;t know something, I guarantee that someone else does. So ask.
-<br>
-<strong>There is a lot of money:</strong> Which means you&#8217;ll likely get some of it. Consistently.
-<br>
-<strong>Their business model works:</strong> Big corporations are not in business to lose money. They&#8217;ve been around the block and know how to make it. Their success is driven from people who are making good business decisions. Be aware of the smart decisions that are made and try to fit them into your own life.
-<br>
-<strong>People know your company:</strong> When someone asks &#8220;what do you do?&#8221; you don&#8217;t have to fiddle around with fluffing up your day job. You can say, &#8220;I work for IBM&#8221;. People have heard of IBM. Then they will acknowledge with a smile, and you can now focus back on them. It&#8217;s incredible how easy conversations work when you are simple.
-<br>
-<strong>You don&#8217;t actually have to work that hard:</strong> You can - and you should. But, you don&#8217;t have to. The culture in larger organizations are convoluted. A culture mirrors the work it breeds and at IBM you could get away with doing less.
-<br>
-<strong>Free pens and stuff.</strong>
-<br>
-</p>
-
-
-
-
-<h3>Cons:</h3>
-
-
-<p>
-<strong>THERE ARE A LOT OF PEOPLE:</strong> Doing the simple things are hard. There are rules, guidelines and policies. If you need a mouse - you&#8217;ll likely need it to be signed off by your manager. And your manager&#8217;s manager. And your manager&#8217;s manager&#8217;s manager (who you&#8217;ve never met - but sits thirty feet away). You get the point.
-<br>
-<strong>You don&#8217;t actually WANT to work that hard:</strong> If you give a 5/10 or a 10/10, you&#8217;ll likely get a 7/10. I like to work hard - but people don&#8217;t recognize the work you&#8217;ve actually put in. Managers typically reward results when they should be rewarding effort. Effort goes unnoticed.
-<br>
-<strong>Culture:</strong> For someone young (I&#8217;m 26), you want to be around people like yourself. You want to work with people you&#8217;d be friends with. I don&#8217;t hang out with people over 40 that often, but I did at work. It makes for a very tangled culture with many faces. Ask 50 people what the culture is like, and you&#8217;ll get 50 different answers.
-<br>
-<strong>You don&#8217;t say hi to everyone:</strong> No one will look at you as you walk in the building. A smirk is the only thing you&#8217;ll get from an unknown colleague. A big company feels like a big city street. It&#8217;s unfriendly.
-<br>
-<strong>People don&#8217;t care:</strong> There is a diffusion of responsibility when it comes to anything. Especially when trying to develop young and eager talent. Rather then set them up for success, better drown them in boredom and uncertainty. But it&#8217;s okay, because we are giving them a pay check and dental coverage - right? Wrong.
-</p>
-
-
-
-
-<p>
-When I first wrote this post, I thought that working for a big company had more pros than cons. But I&#8217;ve been working full-time on a startup for only a week and I&#8217;m already more enthusiastic about my day-to-day life. I&#8217;ve been very fortunate to work for a company that put up with me while I learned the ropes and I never had to worry about them NOT paying me. The fact they even paid me at all still somewhat baffles me.
-</p>
-
-
-
-
-<p>
-But it&#8217;s time for me to be the boss. Make decisions and do work that has some greater social value. I hope you keep reading and I have something to talk about.
-</p>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
-
+        <div class="projects">
+            <h2>Projects</h2>
+            <a href="https://misshula.github.io/days-calculator-app/" class="project-link">USA Days Calculator</a>
+            <a href="https://github.com/misshula" class="project-link">View All Projects</a>
+        </div>
     </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2013 - David Misshula -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
-
-<script type="text/javascript">
-      var disqus_shortname = 'davidmisshulablog';
-      
-        
-        var disqus_script = 'count.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
-
-
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) {return;}
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-
-
-  <script type="text/javascript">
-    (function() {
-      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
-      script.src = 'https://apis.google.com/js/plusone.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
-    })();
-  </script>
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
 </body>
 </html>
