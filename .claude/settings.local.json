@@ -2,7 +2,13 @@
   "permissions": {
     "allow": [
       "Read(//Users/davidmisshula/src/app-playground/**)",
-      "Read(//Users/davidmisshula/**)"
+      "Read(//Users/davidmisshula/**)",
+      "Bash(cat:*)",
+      "Bash(dig:*)",
+      "Bash(whois:*)",
+      "Bash(host:*)",
+      "Bash(rm:*)",
+      "Bash(open index.html)"
     ],
     "deny": [],
     "ask": []
