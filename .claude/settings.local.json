@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/davidmisshula/src/app-playground/**)",
+      "Read(//Users/davidmisshula/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
